@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/WeatherConnect/static/css/main.cc2ace34.css",
+    "main.js": "/WeatherConnect/static/js/main.0952c330.js",
+    "static/media/oculos.png": "/WeatherConnect/static/media/oculos.0015cb29c8366ee9a699.png",
+    "static/media/bh.jpg": "/WeatherConnect/static/media/bh.1f455176ac7aee5dda62.jpg",
+    "static/media/logo.png": "/WeatherConnect/static/media/logo.bb6ea655b6a849eb09aa.png",
+    "static/media/SP.jpg": "/WeatherConnect/static/media/SP.d907b89d293987b305f7.jpg",
+    "static/media/umbrela.png": "/WeatherConnect/static/media/umbrela.8d41057cc6ec8a6ca684.png",
+    "static/media/RJ.jpg": "/WeatherConnect/static/media/RJ.96cce3f5a5a326a8fcf6.jpg",
+    "static/media/PA.jpg": "/WeatherConnect/static/media/PA.65399d0487782f7a6e46.jpg",
+    "index.html": "/WeatherConnect/index.html",
+    "main.cc2ace34.css.map": "/WeatherConnect/static/css/main.cc2ace34.css.map",
+    "main.0952c330.js.map": "/WeatherConnect/static/js/main.0952c330.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc2ace34.css",
+    "static/js/main.0952c330.js"
+  ]
+}
