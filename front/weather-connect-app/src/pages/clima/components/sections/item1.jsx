@@ -13,11 +13,15 @@ function Item1() {
 					 <div className="line-gradient3 relative z-0 "></div>
 				 </div>
 
+				 <div className="flex flex-col items-center">
+					 
+				 </div>
+
 
 			 </div>
 		 </div>
 	 </div>
-	)
+)
 }
 
 export default Item1;

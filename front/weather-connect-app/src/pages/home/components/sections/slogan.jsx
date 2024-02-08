@@ -2,7 +2,7 @@
 
 function Slogan() {
 	return (
-	 <section className="bg-gray-100 py-10 cel:pb-1">
+	 <section className="py-10 cel:pb-1">
 		 <div className="flex items-center justify-center flex-wrap mx-auto">
 			 <div className="container">
 				 <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">

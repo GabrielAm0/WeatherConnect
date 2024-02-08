@@ -89,6 +89,31 @@ html {
     }
 }
 
+
+.button-gradient {
+    height: 40.5px;
+    width: 20%;
+    background: linear-gradient(to right, #4717e0, 
+    #8729c2, 
+    #a4356d, 
+    #390ba0, 
+    #8729c2,
+    #8729c2,
+    #a4356d,
+    );
+    background-size: 200% auto;
+    animation: gradientMove 2s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: -10% 50%;
+    }
+    100% {
+        background-position: -100% 50%;
+    }
+}
+
 .shadow-top {
     box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1);
 }
@@ -228,6 +253,11 @@ html {
 }
 
 #div-master-oculos{
+    transform: translateY(+500px);
+    opacity: 0;
+}
+
+#contact{
     transform: translateY(+500px);
     opacity: 0;
 }

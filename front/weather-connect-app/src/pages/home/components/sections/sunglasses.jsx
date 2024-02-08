@@ -16,14 +16,14 @@ function Sunglasses() {
 			scrollTrigger: {
 				// markers: true,
 				trigger: '#div-sec-oculos',
-				start: '100px',
+				start: '-460px',
 				end: '550px',
 				scrub: true,
 			},
 		})
 
 		return () => {
-			gsap.killTweensOf('.texto-guarda-chuva')
+			gsap.killTweensOf('.texto-oculos')
 		}
 
 	}, [])
@@ -35,20 +35,18 @@ function Sunglasses() {
 			scrollTrigger: {
 				// markers: true,
 				trigger: '#div-sec-oculos',
-				start: '100px',
+				start: '-460px',
 				end: '550px',
 				scrub: true,
 			},
 		})
 
 		return () => {
-			gsap.killTweensOf('.guarda-chuva')
+			gsap.killTweensOf('.oculos')
 		}
 
 	}, [])
-
-
-
+	
 
 	useLayoutEffect(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -71,7 +69,7 @@ function Sunglasses() {
 	}, [])
 
 	return (
-	 <section id="div-master-oculos" className="flex items-center justify-center flex-wrap mx-auto pb-28 mb-5 ">
+	 <section id="div-master-oculos" className="flex items-center justify-center flex-wrap mx-auto mb-5 ">
 		 <div className="container">
 			 <div id="div-sec-oculos" className="flex flex-col items-center justify-center">
 				 <div className="flex gap-28 flex-row media-fd items-center justify-center">

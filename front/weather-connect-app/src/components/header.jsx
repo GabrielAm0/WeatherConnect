@@ -18,7 +18,7 @@ function Header() {
 
 	return (
 	 <header className="fixed w-full top-0 z-50">
-		 <nav className="bg-gray-100 py-3 header">
+		 <nav className="py-3 header">
 			 <div className="flex items-center justify-center flex-wrap mx-auto">
 				 <div className="container">
 					 <div className="flex flex-row justify-between items-center mx-auto">

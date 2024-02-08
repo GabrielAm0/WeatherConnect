@@ -18,7 +18,7 @@ function Card() {
 				// markers: true,
 				trigger: '#sec-trig',
 				start: '590px',
-				end: '900px',
+				end: '815px',
 				scrub: true,
 			},
 		})
@@ -38,7 +38,7 @@ function Card() {
 				// markers: true,
 				trigger: '#sec-trig',
 				start: '590px',
-				end: '900px',
+				end: '815px',
 				scrub: true,
 			},
 		})
@@ -58,7 +58,7 @@ function Card() {
 				// markers: true,
 				trigger: '#sec-trig',
 				start: '590px',
-				end: '900px',
+				end: '815px',
 				scrub: true,
 			},
 		})
@@ -78,7 +78,7 @@ function Card() {
 				// markers: true,
 				trigger: '#sec-trig',
 				start: '590px',
-				end: '900px',
+				end: '815px',
 				scrub: true,
 			},
 		})
