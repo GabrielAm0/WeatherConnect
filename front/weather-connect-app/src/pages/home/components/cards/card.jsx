@@ -136,30 +136,30 @@ function Card() {
 
 			 let cidade = cidades[key];
 			 return (
-			  <div id={"Card" + i++} className="max-w-sm bg-white border border-gray-400 rounded-lg shadow ">
+			  <div id={"Card" + i++} className="max-w-sm bg-white border border-gray-400 dark:border-gray-900 rounded-lg shadow ">
 				  <div className="img-card bg-cover rounded-t-lg" style={{backgroundImage: `url(${cidade.imagem})`}}>
 					  <div className="overlay"></div>
 				  </div>
-				  <div className="p-5 flex flex-col justify-center items-center">
+				  <div className="p-5 flex flex-col justify-center items-center dark:bg-slate-700">
 					  <h5
-					   className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center">{cidade.nome}</h5>
+					   className="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-center dark:text-slate-200 ">{cidade.nome}</h5>
 					  <div className="flex gap-4 flex-row items-center text-center justify-center">
 						  <div className="flex flex-col justify-center items-center">
 							  <h3
-							   className="text-xl font-semibold text-gray-700 text-center">{cidade.temperatura}</h3>
-							  <small className='tracking-tight'>Temperatura C°</small>
+							   className="text-xl font-semibold text-gray-700 dark:text-slate-300 text-center">{cidade.temperatura}</h3>
+							  <small className='tracking-tight dark:text-slate-300'>Temperatura C°</small>
 
 						  </div>
 						  <div className="flex flex-col justify-center items-center">
 							  <h3
-							   className="text-xl font-semibold text-gray-700 text-center">{cidade.Umidade}</h3>
-							  <small className='tracking-tight'>Umidade</small>
+							   className="text-xl font-semibold text-gray-700 dark:text-slate-300 text-center">{cidade.Umidade}</h3>
+							  <small className='tracking-tight dark:text-slate-300'>Umidade</small>
 						  </div>
 						  
 						  <div className="flex flex-col justify-center items-center">
 							  <h3
-							   className="text-xl font-semibold text-gray-700 text-center">{cidade.PorChuva}</h3>
-							  <small className='tracking-tight'>Chance de chuva</small>
+							   className="text-xl font-semibold text-gray-700 dark:text-slate-300 text-center">{cidade.PorChuva}</h3>
+							  <small className='tracking-tight dark:text-slate-300'>Chance de chuva</small>
 						  </div>
 					  </div>
 				  </div>

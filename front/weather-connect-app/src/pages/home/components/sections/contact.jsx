@@ -29,13 +29,13 @@ function Contact() {
 
 	return (<>
 
-		 <section id="contact" className="text-gray-700 body-font relative">
-			 <div className="container px-5 pb-36 mx-auto">
+		 <section className="bg-white dark:bg-slate-800 text-gray-700 body-font relative">
+			 <div  id="contact" className="container px-5 pb-36 mx-auto">
 				 <div className="flex flex-col text-center w-full mb-12">
-					 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+					 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white">
 						 Contate-nos
 					 </h1>
-					 <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+					 <p className="lg:w-2/3 mx-auto leading-relaxed text-base dark:text-slate-200">
 						 Deixe conosco suas dúvidas, sugestões ou críticas.
 					 </p>
 				 </div>
@@ -43,7 +43,7 @@ function Contact() {
 					 <div className="flex flex-wrap -m-2">
 						 <div className="p-2 w-1/2">
 							 <div className="relative">
-								 <label for="name" className="leading-7 text-sm text-gray-600">
+								 <label for="name" className="leading-7 text-sm text-gray-600 dark:text-slate-200">
 									 Nome
 								 </label>
 								 <input
@@ -58,7 +58,7 @@ function Contact() {
 							 <div className="relative">
 								 <label
 								  for="email"
-								  className="leading-7 text-sm text-gray-600"
+								  className="leading-7 text-sm text-gray-600 dark:text-slate-200"
 								 >
 									 Email
 								 </label>
@@ -74,7 +74,7 @@ function Contact() {
 							 <div className="relative">
 								 <label
 								  for="message"
-								  className="leading-7 text-sm text-gray-600"
+								  className="leading-7 text-sm text-gray-600 dark:text-slate-200"
 								 >
 									 Mensagem
 								 </label>

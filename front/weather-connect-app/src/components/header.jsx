@@ -40,7 +40,7 @@ function Header() {
 									 <NavLink
 									  to="/home"
 									  activeClassName="text-slate-500"
-									  className={`text-slate800 hover:text-slate-500 ${isNavLinkActive('/home') ? 'text-gradient font-extrabold' : ''}`}
+									  className={`text-slate-800 hover:text-slate-500 ${isNavLinkActive('/home') ? 'text-gradient font-extrabold' : ''}dark:text-slate-200`}
 									 >
 										 Home
 									 </NavLink>
@@ -49,7 +49,7 @@ function Header() {
 									 <NavLink
 									  to="/clima"
 									  activeClassName="text-slate-500"
-									  className={`text-slate800 hover:text-slate-500 ${isNavLinkActive('/clima') ? 'text-gradient font-extrabold' : ''}`}
+									  className={`text-slate-800 hover:text-slate-500 ${isNavLinkActive('/clima') ? 'text-gradient font-extrabold' : ''}dark:text-slate-200`}
 									 >
 										 Clima
 									 </NavLink>
@@ -85,7 +85,7 @@ function Header() {
 									 <a
 									  href="https://github.com/GabrielAm0/WeatherConnect"
 									  target="_blank"
-									  className="ml-1 block text-slate800 hover:text-slate-500"
+									  className="ml-1 block text-slate800 hover:text-slate-500 dark:text-slate-200"
 									 >
 										 <span className="sr-only">Tailwind CSS on GitHub</span>
 										 <svg viewBox="0 0 16 16" className="w-5 h-5" fill="currentColor"

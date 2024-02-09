@@ -13,18 +13,18 @@ html {
 }
 
 .text-gradient {
-    background: linear-gradient(to right, #4717e0, #8729c2, #a4356d,
-    #390ba0,
-    #4717e0,
-    #8729c2,
-    #a4356d,
-    #390ba0,
-    #8729c2,
-    #4717e0, #a4356d, #390ba0, #a4356d, #8729c2, #4717e0);
+    background: linear-gradient(to right, #3f06f5, #9f09fd, #f5097f,
+    #3500a9,
+    #3f06f5,
+    #9f09fd,
+    #f5097f,
+    #3500a9,
+    #9f09fd,
+    #3f06f5, #f5097f, #3500a9, #f5097f, #9f09fd, #3f06f5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% auto;
-    animation: gradientMove 2s linear infinite;
+    animation: gradientMove 1.5s linear infinite;
 }
 
 @keyframes gradientMove {
@@ -39,10 +39,24 @@ html {
 .line-gradient1 {
     height: 3.5px;
     width: 91%;
-    background: linear-gradient(to right, #4717e0, #8729c2, #a4356d, #390ba0, #4717e0,
-    #8729c2, #a4356d, #390ba0, #8729c2, #4717e0, #a4356d, #390ba0, #a4356d, #8729c2, #4717e0);
+    background: linear-gradient(to right,
+    #3f06f5,
+    #9f09fd,
+    #f5097f,
+    #3500a9, 
+    #3f06f5,
+    #9f09fd, 
+    #f5097f,
+    #3500a9, 
+    #9f09fd, 
+    #3f06f5, 
+    #f5097f, 
+    #3500a9, 
+    #f5097f, 
+    #9f09fd, 
+    #3f06f5);
     background-size: 200% auto;
-    animation: gradientMove 2s linear infinite;
+    animation: gradientMove 1.5s linear infinite;
 }
 
 @keyframes gradientMove {
@@ -57,10 +71,10 @@ html {
 .line-gradient3 {
     height: 3.5px;
     width: 46.5%;
-    background: linear-gradient(to right, #4717e0, #8729c2, #a4356d, #390ba0, #4717e0,
-    #8729c2, #a4356d, #390ba0, #8729c2, #4717e0, #a4356d, #390ba0, #a4356d, #8729c2, #4717e0);
+    background: linear-gradient(to right, #3f06f5, #9f09fd, #f5097f, #3500a9, #3f06f5,
+    #9f09fd, #f5097f, #3500a9, #9f09fd, #3f06f5, #f5097f, #3500a9, #f5097f, #9f09fd, #3f06f5);
     background-size: 200% auto;
-    animation: gradientMove 2s linear infinite;
+    animation: gradientMove 1.5s linear infinite;
 }
 
 @keyframes gradientMove {
@@ -74,10 +88,10 @@ html {
 .line-gradient {
     height: 3.5px;
     width: 70%;
-    background: linear-gradient(to right, #4717e0, #8729c2, #a4356d, #390ba0, #4717e0,
-    #8729c2, #a4356d, #390ba0, #8729c2, #4717e0, #a4356d, #390ba0, #a4356d, #8729c2, #4717e0);
+    background: linear-gradient(to right, #3f06f5, #9f09fd, #f5097f, #3500a9, #3f06f5,
+    #9f09fd, #f5097f, #3500a9, #9f09fd, #3f06f5, #f5097f, #3500a9, #f5097f, #9f09fd, #3f06f5);
     background-size: 200% auto;
-    animation: gradientMove 2s linear infinite;
+    animation: gradientMove 1.5s linear infinite;
 }
 
 @keyframes gradientMove {
@@ -93,16 +107,16 @@ html {
 .button-gradient {
     height: 40.5px;
     width: 20%;
-    background: linear-gradient(to right, #4717e0, 
-    #8729c2, 
-    #a4356d, 
-    #390ba0, 
-    #8729c2,
-    #8729c2,
-    #a4356d,
+    background: linear-gradient(to right, #3f06f5, 
+    #9f09fd, 
+    #f5097f, 
+    #3500a9, 
+    #9f09fd,
+    #9f09fd,
+    #f5097f,
     );
     background-size: 200% auto;
-    animation: gradientMove 2s linear infinite;
+    animation: gradientMove 1.5s linear infinite;
 }
 
 @keyframes gradientMove {
@@ -130,6 +144,7 @@ html {
     }
 }
 
+/* Estilo padrão da barra de rolagem */
 *::-webkit-scrollbar {
     width: 13px;
 }
@@ -139,7 +154,7 @@ html {
 }
 
 *::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #4717e0, #8729c2, #a4356d, #390ba0);
+    background: linear-gradient(to bottom, #3f06f5, #9f09fd, #f5097f, #3500a9);
     border-radius: 10px;
     border: 3px solid #ffffff;
     animation: gradientMoveSB 2s linear infinite;
@@ -154,9 +169,20 @@ html {
     }
 }
 
+/* Estilo da barra de rolagem quando a classe 'dark' está presente */
+.dark *::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #3f06f5, #9f09fd, #f5097f, #3500a9);
+    border: 3px solid rgb(30 41 59);
+}
+
+.dark *::-webkit-scrollbar-track {
+    background-color: rgb(30 41 59)
+}
+
+
 .header {
-    backdrop-filter: blur(8px); /* Ajuste o valor conforme desejado para o efeito de desfoque */
-    background-color: rgba(255, 255, 255, 0.3); /* Ajuste a opacidade conforme desejado */
+    backdrop-filter: blur(1px); /* Ajuste o valor conforme desejado para o efeito de desfoque */
+    background-color: rgba(255, 255, 255, 0.0008); /* Ajuste a opacidade conforme desejado */
 }
 
 @media (max-width: 414px) {

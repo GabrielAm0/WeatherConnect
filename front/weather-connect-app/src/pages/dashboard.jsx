@@ -1,4 +1,5 @@
 ﻿import Header from "../components/header";
+import Footer from "../components/footer";
 import Clima from "../pages/clima/clima";
 import {useLocation} from "react-router-dom";
 
@@ -27,8 +28,12 @@ function Dashboard() {
 
 	return (
 	 <>
-		 <Header/>
-		 {montaComponente()}
+		 <div className="bg-white">
+			 <Header/>
+			 {montaComponente()}
+			 <Footer/>
+		 </div>
+
 	 </>
 	);
 };

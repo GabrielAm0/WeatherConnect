@@ -49,13 +49,13 @@ function UmbrelaCompo() {
 	}, [])
 
 	return (
-	 <section className="flex items-center justify-center flex-wrap mx-auto py-20">
+	 <section className="bg-white dark:bg-slate-800 flex items-center justify-center flex-wrap mx-auto py-20">
 		 <div className="container">
 			 <div className="flex flex-col items-center justify-center" id="sec-trig">
 				 <div className="flex gap-28 flex-row media-fd items-center justify-center">
 					 <img src={Umbrela} className="guarda-chuva ml-20 cel:ml-0 object-contain img-size"></img>
 					 <div className={'flex flex-col texto-guarda-chuva'}>
-						 <h1 className="text-slate-900 font-bold text-4xl tracking-tight text-center relative z-10">
+						 <h1 className="text-slate-900 dark:text-white font-bold text-4xl tracking-tight text-center relative z-10">
 							 Com base nos dados de sua localização exata, a
 						 </h1>
 
@@ -64,12 +64,12 @@ function UmbrelaCompo() {
 								 <h1 className="margin-r-9 text-gradient text-4xl font-bold tracking-tighter">Weather
 									 Connect</h1>
 								 <h1
-								  className="text-slate-900 font-bold text-4xl tracking-tight text-center relative z-10">
+								  className="text-slate-900 dark:text-white font-bold text-4xl tracking-tight text-center relative z-10">
 									 traz as informações e previsões
 								 </h1>
 							 </div>
 							 <h1
-							  className="text-slate-900 font-bold text-4xl tracking-tight text-center relative z-10">
+							  className="text-slate-900 dark:text-white font-bold text-4xl tracking-tight text-center relative z-10">
 								 climáticas do local em que você está.
 							 </h1>
 						 </div>

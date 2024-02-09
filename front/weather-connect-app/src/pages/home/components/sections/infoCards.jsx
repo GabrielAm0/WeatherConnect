@@ -29,7 +29,7 @@ function InfoCard() {
 	}, [])
 	
 	return (<>
-		<section id="div-master-cards"className="pt-2 flex items-center justify-center flex-wrap mx-auto">
+		<section id="div-master-cards"className="bg-white dark:bg-slate-800 pt-2 flex items-center justify-center flex-wrap mx-auto">
 			<div className="container">
 				<div className="flex flex-col items-center justify-center">
 					<div id="div-cards" className="flex gap-10 flex-row media-fd items-center justify-center">

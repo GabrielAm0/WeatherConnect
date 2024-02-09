@@ -214,11 +214,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel.custodio\\OneDrive - Oitava Igreja Presbiteriana de Belo Horizonte\\Documentos\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
+      "projectUniqueName": "C:\\Users\\gabriel.custodio\\Documents\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
       "projectName": "WeatherConnect.API",
-      "projectPath": "C:\\Users\\gabriel.custodio\\OneDrive - Oitava Igreja Presbiteriana de Belo Horizonte\\Documentos\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
+      "projectPath": "C:\\Users\\gabriel.custodio\\Documents\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
       "packagesPath": "C:\\Users\\gabriel.custodio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel.custodio\\OneDrive - Oitava Igreja Presbiteriana de Belo Horizonte\\Documentos\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\obj\\",
+      "outputPath": "C:\\Users\\gabriel.custodio\\Documents\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gabriel.custodio\\AppData\\Roaming\\NuGet\\NuGet.Config"
