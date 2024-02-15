@@ -1,6 +1,10 @@
 ﻿import {NavLink, useLocation} from 'react-router-dom';
 import Foto from '../assets/img/logo.png';
 import {useState} from "react";
+import {MdDarkMode} from "react-icons/md";
+import { BsSunFill } from "react-icons/bs";
+import {useTheme} from "../hooks/useTheme";
+
 
 function Header() {
 	const location = useLocation();
@@ -15,6 +19,8 @@ function Header() {
 	const toggleMenu = () => {
 		setMenuOpen(!isMenuOpen);
 	};
+
+	const {theme, setTheme} = useTheme();
 
 	return (
 	 <header className="fixed w-full top-0 z-50">
@@ -87,7 +93,6 @@ function Header() {
 									  target="_blank"
 									  className="ml-1 block text-slate800 hover:text-slate-500 dark:text-slate-200"
 									 >
-										 <span className="sr-only">Tailwind CSS on GitHub</span>
 										 <svg viewBox="0 0 16 16" className="w-5 h-5" fill="currentColor"
 										      aria-hidden="true">
 											 <path
@@ -95,6 +100,13 @@ function Header() {
 											 ></path>
 										 </svg>
 									 </a>
+								 </li>
+
+								 <li className="flex items-center">
+									 {theme === 'light' ?
+									  <MdDarkMode size={22} className="cursor-pointer text-slate800 dark:text-slate-200 hover:text-slate-500" onClick={() => setTheme("dark")}></MdDarkMode> : 
+									  (<BsSunFill size={22} className="cursor-pointer text-slate800 dark:text-slate-200 hover:text-slate-500" onClick={() => setTheme("light")}></BsSunFill>)
+									 }
 								 </li>
 							 </ul>
 						 </div>

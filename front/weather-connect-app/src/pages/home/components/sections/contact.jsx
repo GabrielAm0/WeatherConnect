@@ -43,7 +43,7 @@ function Contact() {
 					 <div className="flex flex-wrap -m-2">
 						 <div className="p-2 w-1/2">
 							 <div className="relative">
-								 <label for="name" className="leading-7 text-sm text-gray-600 dark:text-slate-200">
+								 <label className="leading-7 text-sm text-gray-600 dark:text-slate-200">
 									 Nome
 								 </label>
 								 <input
@@ -57,7 +57,6 @@ function Contact() {
 						 <div className="p-2 w-1/2">
 							 <div className="relative">
 								 <label
-								  for="email"
 								  className="leading-7 text-sm text-gray-600 dark:text-slate-200"
 								 >
 									 Email
@@ -73,7 +72,6 @@ function Contact() {
 						 <div className="p-2 w-full">
 							 <div className="relative">
 								 <label
-								  for="message"
 								  className="leading-7 text-sm text-gray-600 dark:text-slate-200"
 								 >
 									 Mensagem

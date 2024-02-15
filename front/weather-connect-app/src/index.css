@@ -8,10 +8,6 @@ body{
 
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .text-gradient {
     background: linear-gradient(to right, #3f06f5, #9f09fd, #f5097f,
     #3500a9,
