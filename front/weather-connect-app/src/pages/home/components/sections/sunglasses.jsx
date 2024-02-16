@@ -69,7 +69,7 @@ function Sunglasses() {
 	}, [])
 
 	return (
-	 <section className="bg-white dark:bg-slate-800 flex items-center justify-center flex-wrap mx-auto pb-10">
+	 <section className="bg-white dark:bg-slate-900 flex items-center justify-center flex-wrap mx-auto pb-10">
 		 <div id="div-master-oculos" className="container">
 			 <div id="div-sec-oculos" className="flex flex-col items-center justify-center">
 				 <div className="flex gap-28 flex-row media-fd items-center justify-center">

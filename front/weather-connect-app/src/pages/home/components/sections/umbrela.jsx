@@ -49,7 +49,7 @@ function UmbrelaCompo() {
 	}, [])
 
 	return (
-	 <section className="bg-white dark:bg-slate-800 flex items-center justify-center flex-wrap mx-auto py-20">
+	 <section className="bg-white dark:bg-slate-900 flex items-center justify-center flex-wrap mx-auto py-20">
 		 <div className="container">
 			 <div className="flex flex-col items-center justify-center" id="sec-trig">
 				 <div className="flex gap-28 flex-row media-fd items-center justify-center">

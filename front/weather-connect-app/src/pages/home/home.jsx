@@ -8,24 +8,27 @@ import Sunglasses from "./components/sections/sunglasses";
 import Contact from "./components/sections/contact";
 
 
-
 function Components() {
-	
+
 	return (
 	 <>
-		 <Header/>
+		 <div className="h-100 bg-white dark:bg-slate-900">
+			 
+			 <Header/>
 
-		 <Slogan/>
+			 <Slogan/>
 
-		 <Umbrela/>
+			 <Umbrela/>
 
-		 <InfoCards/>
+			 <InfoCards/>
 
-		 <Sunglasses/>
+			 <Sunglasses/>
 
-		 <Contact/>
+			 <Contact/>
 
-		 <Footer/>
+			 <Footer/>
+			 
+		 </div>
 	 </>
 	)
 }

@@ -2,7 +2,7 @@
 
 function Footer() {
 	return (
-	 <footer className="bg-gray-100 dark:bg-slate-900 shadow-top py-3">
+	 <footer className="bg-gray-100 dark:bg-slate-700 shadow-top py-3">
 		 <div className="container mx-auto text-center">
 			 <p className="text-slate-600 dark:text-white text-sm">
 				 © 2023 Weather Connect. Todos os direitos reservados.
