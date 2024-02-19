@@ -1,6 +1,7 @@
 ﻿import Header from "../components/header";
 import Footer from "../components/footer";
 import Clima from "../pages/clima/clima";
+import Home from "../pages/home/home";
 import {useLocation} from "react-router-dom";
 
 
@@ -9,23 +10,26 @@ function Dashboard() {
 	const location = useLocation();
 
 	function montaComponente() {
-		if (location.pathname === "/clima") {
-			return (
-			 <>
-				 <Clima/>
-			 </>
-			);
-		} else if (location.pathname === "/astronomia") {
-			return (
-			 <>
-				 <h1 className={'py-20'}>Astronomia</h1>
-			 </>
-			);
+
+		switch (location.pathname) {
+			case "/home":
+				return (
+				 <>
+					 <Home/>
+				 </>
+				
+			)
+				;
+			case "/clima":
+				return (
+				 <>
+					 <Clima/>
+				 </>
+				);
 		}
+		
 	}
-
-	console.log(location.pathname);
-
+	
 	return (
 	 <>
 		 <div className="bg-white">
