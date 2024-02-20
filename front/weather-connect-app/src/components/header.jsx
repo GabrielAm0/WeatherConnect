@@ -45,7 +45,7 @@ function Header() {
 								 <li>
 									 <NavLink
 									  to="/home"
-									  activeClassName="text-slate-500"
+									  activeclassname="text-slate-500"
 									  className={`text-slate-800 hover:text-slate-500 ${isNavLinkActive('/home') ? 'text-gradient font-extrabold' : ''}dark:text-slate-200`}
 									 >
 										 Home
@@ -54,7 +54,7 @@ function Header() {
 								 <li>
 									 <NavLink
 									  to="/clima"
-									  activeClassName="text-slate-500"
+									  activeclassname="text-slate-500"
 									  className={`text-slate-800 hover:text-slate-500 ${isNavLinkActive('/clima') ? 'text-gradient font-extrabold' : ''}dark:text-slate-200`}
 									 >
 										 Clima
@@ -63,7 +63,7 @@ function Header() {
 								 {/*<li>
 									 <NavLink
 									  to="/astronomia"
-									  activeClassName="text-slate-500"
+									  activeclassname="text-slate-500"
 									  className={`text-slate800 hover:text-slate-500 ${isNavLinkActive('/astronomia') ? 'text-gradient font-extrabold' : ''}`}
 									 >
 										 Astronomia
@@ -72,7 +72,7 @@ function Header() {
 								 <li>
 									 <NavLink
 									  to="/sol"
-									  activeClassName="text-slate-500"
+									  activeclassname="text-slate-500"
 									  className={`text-slate800 hover:text-slate-500 ${isNavLinkActive('/sol') ? 'text-gradient font-extrabold' : ''}`}
 									 >
 										 Sol
@@ -81,7 +81,7 @@ function Header() {
 								 <li>
 									 <NavLink
 									  to="/mares"
-									  activeClassName="text-slate-500"
+									  activeclassname="text-slate-500"
 									  className={`text-slate800 hover:text-slate-500 ${isNavLinkActive('/mares') ? 'text-gradient font-extrabold' : ''}`}
 									 >
 										 Marés

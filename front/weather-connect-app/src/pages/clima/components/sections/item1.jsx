@@ -1,16 +1,18 @@
-﻿import React, { useState } from 'react';
+﻿import React, {useState} from 'react';
+import api from '../../../../api/getByCEP';
 
 function Item1() {
 	const [inputValue, setInputValue] = useState('');
 
-	const handleKeyDown = (e) => {
+	const handleKeyDown = async (e) => {
 		if (e.key === 'Enter') {
 			e.preventDefault();
-			alert(inputValue);
+			api.get(`/${inputValue}/json`).then((response) => {
+				console.log(response.data);
+			});
 			setInputValue('');
 		}
 	};
-
 	const handleChange = (e) => {
 		setInputValue(e.target.value);
 	};
@@ -20,7 +22,8 @@ function Item1() {
 		 <div className="container">
 			 <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
 				 <div className="flex flex-col items-center">
-					 <h1 className="text-slate-900 dark:text-white font-extrabold text-5xl tracking-tight text-center relative z-10">
+					 <h1
+					  className="text-slate-900 dark:text-white font-extrabold text-5xl tracking-tight text-center relative z-10">
 						 Digite seu endereço:
 					 </h1>
 					 <div className="line-gradient3 relative z-0"></div>

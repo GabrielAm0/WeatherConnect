@@ -209,24 +209,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabriel.custodio\\.nuget\\packages\\": {}
+    "C:\\Users\\Gabriel Amorim\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabriel.custodio\\Documents\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel Amorim\\Desktop\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
       "projectName": "WeatherConnect.API",
-      "projectPath": "C:\\Users\\gabriel.custodio\\Documents\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
-      "packagesPath": "C:\\Users\\gabriel.custodio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabriel.custodio\\Documents\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\obj\\",
+      "projectPath": "C:\\Users\\Gabriel Amorim\\Desktop\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
+      "packagesPath": "C:\\Users\\Gabriel Amorim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gabriel Amorim\\Desktop\\WeatherConnect\\back\\src\\WeatherConnect.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\gabriel.custodio\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Gabriel Amorim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -269,7 +278,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
