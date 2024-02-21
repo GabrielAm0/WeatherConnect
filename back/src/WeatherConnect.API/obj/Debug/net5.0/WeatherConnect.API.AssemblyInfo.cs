@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WeatherConnect.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca3bbf344d282e077069c938443f45ef9e91bf89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6de4cc7ffdad8ef6fb1a226d7b97730e5b9eb960")]
 [assembly: System.Reflection.AssemblyProductAttribute("WeatherConnect.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WeatherConnect.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

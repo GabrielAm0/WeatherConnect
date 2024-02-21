@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using WeatherConnect.API.Interfaces.Services;
+using WeatherConnect.API.Services;
 
 namespace WeatherConnect.API
 {
@@ -28,6 +30,7 @@ namespace WeatherConnect.API
         {
 
             services.AddControllers();
+            services.AddScoped<IApis, WeatherService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WeatherConnect.API", Version = "v1" });
