@@ -62,7 +62,6 @@ C:\Users\gabriel.custodio\OneDrive - Oitava Igreja Presbiteriana de Belo Horizon
 C:\Users\gabriel.custodio\OneDrive - Oitava Igreja Presbiteriana de Belo Horizonte\Documentos\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\ref\WeatherConnect.API.dll
 C:\Users\gabriel.custodio\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\gabriel.custodio\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\appsettings.json
-C:\Users\gabriel.custodio\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.StaticWebAssets.xml
 C:\Users\gabriel.custodio\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.exe
 C:\Users\gabriel.custodio\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.deps.json
 C:\Users\gabriel.custodio\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.runtimeconfig.json

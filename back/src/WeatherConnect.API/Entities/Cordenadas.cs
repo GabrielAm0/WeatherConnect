@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace WeatherConnect.API.Entities
+﻿namespace WeatherConnect.API.Entities
 {
 	public class Cordenadas
 	{

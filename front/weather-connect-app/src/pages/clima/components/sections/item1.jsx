@@ -1,16 +1,11 @@
 ﻿import React, {useState} from 'react';
-import apiAdress from '../../../../api/getByAdress';
-import apiCEP from '../../../../api/getByCEP';
+
 import apiWeather from '../../../../api/getWeather';
 
 function Item1() {
 	function api() {
-		apiCEP.get(`${inputValue}/json/`).then((response) => {
-			apiAdress.get(`${response.data.logradouro}+${response.data.bairro}+${response.data.localidade}+${response.data.uf}+&key=ff0e793530ac4053929bc43af63b8a0a&language=pt&pretty=1`).then((response) => {
-				apiWeather.get(`weather?lat=${response.data.results[0].geometry.lat}&lon=${response.data.results[0].geometry.lng}&units=metric&lang=pt_br&appid=eb8fe453dcf001bc00344439e1ff4f67`).then((resposta) => {
-					console.log(resposta);
-				});
-			});
+		apiWeather.get(`${inputValue}`).then((response) => {
+			console.log(response);
 		});
 	}
 	

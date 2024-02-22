@@ -24,9 +24,7 @@ namespace WeatherConnect.API.Services
 		{
 			using (HttpClient client = new HttpClient())
 			{
-				HttpResponseMessage response =
-				await client.GetAsync(
-				$"https://api.opencagedata.com/geocode/v1/json?q={endereco.logradouro}+{endereco.bairro}+{endereco.localidade}+{endereco.uf}+&key=ff0e793530ac4053929bc43af63b8a0a&language=pt&pretty=1");
+				HttpResponseMessage response = await client.GetAsync($"https://api.opencagedata.com/geocode/v1/json?q={endereco.logradouro}+{endereco.bairro}+{endereco.localidade}+{endereco.uf}+&key=ff0e793530ac4053929bc43af63b8a0a&language=pt&pretty=1");
 
 				var opencageResponse = JsonSerializer.Deserialize<OpencageResponse>(await response.Content.ReadAsStringAsync());
 
@@ -44,21 +42,21 @@ namespace WeatherConnect.API.Services
 		{
 			using (HttpClient client = new HttpClient())
 			{
-				HttpResponseMessage response =
-				await client.GetAsync($"https://api.openweathermap.org/data/2.5/weather?lat={cordenadas.latitude}&lon={cordenadas.longitude}&units=metric&lang=pt_br&appid=eb8fe453dcf001bc00344439e1ff4f67");
+				HttpResponseMessage response = await client.GetAsync($"https://api.openweathermap.org/data/2.5/weather?lat=-19.92083&lon=-43.93778&units=metric&lang=pt_br&appid=eb8fe453dcf001bc00344439e1ff4f67");
+				
 				var openWeatherResponse = JsonSerializer.Deserialize<OpenWeather>(await response.Content.ReadAsStringAsync());
-				//
-				// var clima = new InfClima()
-				// {
-				// Temperatura = openWeatherResponse.main.Temp.ToString(CultureInfo.InvariantCulture),
-				// Sencacao_termica = openWeatherResponse.main.Feels_like.ToString(CultureInfo.InvariantCulture),
-				// Temperatura_minima = openWeatherResponse.main.Temp_min.ToString(CultureInfo.InvariantCulture),
-				// Temperatura_maxima = openWeatherResponse.main.Temp_max.ToString(CultureInfo.InvariantCulture),
-				// Pressao = openWeatherResponse.main.Pressure.ToString(CultureInfo.InvariantCulture),
-				// Humidade = openWeatherResponse.main.Humidity.ToString(CultureInfo.InvariantCulture),
-				// };
+				
+				var infClima = new InfClima
+				{
+					Temperatura = openWeatherResponse.main.temp,
+					Sencacao_termica = openWeatherResponse.main.feels_like,
+					Temperatura_minima = openWeatherResponse.main.temp_min,
+					Temperatura_maxima = openWeatherResponse.main.temp_max,
+					Pressao = openWeatherResponse.main.pressure,
+					Umidade = openWeatherResponse.main.humidity
+				};
 
-				return null;
+				return infClima;
 			}
 		}
 	}
