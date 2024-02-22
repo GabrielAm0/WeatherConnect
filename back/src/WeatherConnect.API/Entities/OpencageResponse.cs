@@ -35,7 +35,7 @@ namespace WeatherConnect.API.Entities
         public Components components { get; set; }
         public int confidence { get; set; }
         public string formatted { get; set; }
-        public Geometry Geometry { get; set; }
+        public Geometry geometry { get; set; }
     }
     
     public class Geometry

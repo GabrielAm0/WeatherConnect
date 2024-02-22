@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -12,11 +11,13 @@ namespace WeatherConnect.API.Services
 	{
 		public async Task<CEP> GetCep(string cep)
 		{
-			HttpClient httpClient = new HttpClient();
-			var response = await httpClient.GetAsync($"https://viacep.com.br/ws/{cep}/json/");
-			CEP json1 = JsonSerializer.Deserialize<CEP>(await response.Content.ReadAsStringAsync());
+			using (HttpClient client = new HttpClient())
+			{
+				var response = await client.GetAsync($"https://viacep.com.br/ws/{cep}/json/");
+				CEP json1 = JsonSerializer.Deserialize<CEP>(await response.Content.ReadAsStringAsync());
 
-			return json1;
+				return json1;
+			}
 		}
 
 		public async Task<Cordenadas> GetCordenadas(CEP endereco)
@@ -29,12 +30,10 @@ namespace WeatherConnect.API.Services
 
 				var opencageResponse = JsonSerializer.Deserialize<OpencageResponse>(await response.Content.ReadAsStringAsync());
 
-
-				var firstResult = opencageResponse.results[0];
 				var coordenadas = new Cordenadas
 				{
-				latitude = firstResult.Geometry.lat.ToString(),
-				longitude = firstResult.Geometry.lng.ToString()
+				latitude = opencageResponse.results[0].geometry.lat.ToString(CultureInfo.InvariantCulture),
+				longitude = opencageResponse.results[0].geometry.lng.ToString(CultureInfo.InvariantCulture)
 				};
 
 				return coordenadas;
@@ -43,15 +42,24 @@ namespace WeatherConnect.API.Services
 
 		public async Task<InfClima> GetWeather(Cordenadas cordenadas)
 		{
-			HttpClient httpClient = new HttpClient();
-			HttpResponseMessage response =
-			await httpClient.GetAsync($"https://api.openweathermap.org/data/2.5/weather?lat={cordenadas.latitude}&lon={cordenadas.longitude}&units=metric&lang=pt_br&appid=eb8fe453dcf001bc00344439e1ff4f67");
-			var json = JsonSerializer.Deserialize<InfClima>(await response.Content.ReadAsStringAsync());
+			using (HttpClient client = new HttpClient())
+			{
+				HttpResponseMessage response =
+				await client.GetAsync($"https://api.openweathermap.org/data/2.5/weather?lat={cordenadas.latitude}&lon={cordenadas.longitude}&units=metric&lang=pt_br&appid=eb8fe453dcf001bc00344439e1ff4f67");
+				var openWeatherResponse = JsonSerializer.Deserialize<OpenWeather>(await response.Content.ReadAsStringAsync());
+				//
+				// var clima = new InfClima()
+				// {
+				// Temperatura = openWeatherResponse.main.Temp.ToString(CultureInfo.InvariantCulture),
+				// Sencacao_termica = openWeatherResponse.main.Feels_like.ToString(CultureInfo.InvariantCulture),
+				// Temperatura_minima = openWeatherResponse.main.Temp_min.ToString(CultureInfo.InvariantCulture),
+				// Temperatura_maxima = openWeatherResponse.main.Temp_max.ToString(CultureInfo.InvariantCulture),
+				// Pressao = openWeatherResponse.main.Pressure.ToString(CultureInfo.InvariantCulture),
+				// Humidade = openWeatherResponse.main.Humidity.ToString(CultureInfo.InvariantCulture),
+				// };
 
-			var firstResult = json.Main;
-			
-
-			return firstResult;
+				return null;
+			}
 		}
 	}
 }
