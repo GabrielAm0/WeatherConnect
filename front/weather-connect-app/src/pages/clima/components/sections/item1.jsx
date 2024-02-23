@@ -1,15 +1,21 @@
-﻿import React, { useState } from 'react';
-import apiWeather from '../../../../api/getWeather';
+﻿import React, { useState } from "react";
+import apiWeather from "../../../../api/getWeather";
+import Modal from "react-modal";
 
 function Item1() {
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalData, setModalData] = useState("");
+
+  let response = 0;
   async function api() {
     try {
       setLoading(true);
-      const response = await apiWeather.get(`${inputValue}`);
-      console.log(response.data);
+      response = await apiWeather.get(`${inputValue}`);
+      setModalData(response.data);
+      setModalIsOpen(true);
     } catch (error) {
       console.error(error);
     } finally {
@@ -18,15 +24,20 @@ function Item1() {
   }
 
   const handleKeyDown = async (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       e.preventDefault();
       await api();
-      setInputValue('');
+      setInputValue("");
     }
   };
 
   const handleChange = (e) => {
     setInputValue(e.target.value);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setModalData("");
   };
 
   return (
@@ -35,7 +46,7 @@ function Item1() {
         <div className="relative max-w-5xl mx-auto pt-20 sm:pt-24 lg:pt-32">
           <div className="flex flex-col items-center">
             <h1 className="text-slate-900 dark:text-white font-extrabold text-5xl tracking-tight text-center relative z-10">
-              Digite seu endereço:
+              Digite seu CEP:
             </h1>
             <div className="line-gradient3 relative z-0"></div>
           </div>
@@ -57,6 +68,53 @@ function Item1() {
             </div>
           )}
         </div>
+
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Example Modal"
+          className="modal-content"
+          overlayClassName="modal-overlay"
+        >
+          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+              <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+                  <h3 className="text-3xl font-semibold">Modal Title</h3>
+                  <button
+                    onClick={closeModal}
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+                  >
+                    X
+                  </button>
+                </div>
+                <div className="w-auto p-6 flex-auto">
+                  <p className="mb-2">
+                    <span className="font-bold">Temperatura:</span>{" "}
+                    {modalData.temperatura}
+                  </p>
+                  <p className="mb-2">
+                    <span className="font-bold">Sensação Térmica:</span>{" "}
+                    {modalData.sensacao_termica}
+                  </p>
+                  <p className="mb-2">
+                    <span className="font-bold">Temperatuda minima:</span>{" "}
+                    {modalData.temperatura_minima}
+                  </p>
+                </div>
+                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                  <button
+                    onClick={closeModal}
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+                  >
+                    Fechar Modal
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+        </Modal>
       </div>
     </div>
   );

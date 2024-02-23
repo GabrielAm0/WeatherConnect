@@ -76,7 +76,7 @@ body {
 
 .line-gradient3 {
     height: 3.5px;
-    width: 46.5%;
+    width: 36.5%;
     background: linear-gradient(to right, #3f06f5, #9f09fd, #f5097f, #3500a9, #3f06f5,
     #9f09fd, #f5097f, #3500a9, #9f09fd, #3f06f5, #f5097f, #3500a9, #f5097f, #9f09fd, #3f06f5);
     background-size: 200% auto;

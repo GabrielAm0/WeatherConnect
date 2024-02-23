@@ -49,7 +49,7 @@ namespace WeatherConnect.API.Services
 				var infClima = new InfClima
 				{
 					Temperatura = openWeatherResponse.main.temp,
-					Sencacao_termica = openWeatherResponse.main.feels_like,
+					Sensacao_termica = openWeatherResponse.main.feels_like,
 					Temperatura_minima = openWeatherResponse.main.temp_min,
 					Temperatura_maxima = openWeatherResponse.main.temp_max,
 					Pressao = openWeatherResponse.main.pressure,

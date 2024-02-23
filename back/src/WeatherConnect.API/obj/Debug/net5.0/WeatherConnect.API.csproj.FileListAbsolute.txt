@@ -101,3 +101,32 @@ C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\D
 C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\msbuild.build.WeatherConnect.API.props
 C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.WeatherConnect.API.props
 C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.WeatherConnect.API.props
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\appsettings.json
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.exe
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.deps.json
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.runtimeconfig.json
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.runtimeconfig.dev.json
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.pdb
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.csproj.AssemblyReference.cache
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.AssemblyInfoInputs.cache
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.AssemblyInfo.cs
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.RazorTargetAssemblyInfo.cache
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\scopedcss\bundle\WeatherConnect.API.styles.css
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\WeatherConnect.API.StaticWebAssets.Manifest.cache
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.pdb
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.genruntimeconfig.cache
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\ref\WeatherConnect.API.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\ref\WeatherConnect.API.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\WeatherConnect.API.StaticWebAssets.xml
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.csproj.CopyComplete
