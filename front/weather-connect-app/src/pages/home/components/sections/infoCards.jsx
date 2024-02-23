@@ -1,5 +1,4 @@
 ﻿import React, {useLayoutEffect} from 'react'
-import BH from '../../../../assets/img/home/bh.jpg'
 import Card from "../cards/card";
 import {gsap} from "gsap";
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
