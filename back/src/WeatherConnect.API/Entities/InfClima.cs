@@ -8,5 +8,6 @@
 		public double Temperatura_maxima { get; set; }
 		public int Pressao { get; set; }
 		public int Umidade { get; set; }
+		public string Descricao { get; set; }
 	}
 }

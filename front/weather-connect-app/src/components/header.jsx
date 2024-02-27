@@ -29,7 +29,7 @@ function Header() {
 				 <div className="container">
 					 <div className="flex flex-row justify-between items-center mx-auto">
 						 <div className="flex flex-row items-center">
-							 <ul className="font-semibold flex lg:flex-row lg:space-x-8 lg:mt-0 flex">
+							 <ul className="font-semibold  lg:flex-row lg:space-x-8 lg:mt-0 flex">
 								 <li>
 									 <NavLink to="/home" className={'flex flex-row items-center justify-center'}>
 										 <img src={Foto} alt="Weather Connect Logo" className="w-10 h-10 mr-2"/>

@@ -17,7 +17,6 @@ namespace WeatherConnect.API.Entities
 		public int timezone { get; set; }
 		public int id { get; set; }
 		public string name { get; set; }
-		public int cod { get; set; }
 	}
 
 	public class Coord
@@ -72,7 +71,7 @@ namespace WeatherConnect.API.Entities
 	public class Root
 	{
 		public Coord coord { get; set; }
-		public List<Weather> weather { get; set; }
+		public Weather weather { get; set; }
 		public string Base { get; set; }
 		public Main main { get; set; }
 		public int visibility { get; set; }
@@ -84,6 +83,5 @@ namespace WeatherConnect.API.Entities
 		public int timezone { get; set; }
 		public int id { get; set; }
 		public string name { get; set; }
-		public int cod { get; set; }
 	}
 }

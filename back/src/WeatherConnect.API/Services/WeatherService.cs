@@ -30,8 +30,8 @@ namespace WeatherConnect.API.Services
 
 				var coordenadas = new Cordenadas
 				{
-				latitude = opencageResponse.results[0].geometry.lat.ToString(CultureInfo.InvariantCulture),
-				longitude = opencageResponse.results[0].geometry.lng.ToString(CultureInfo.InvariantCulture)
+					Latitude = opencageResponse.results[0].geometry.lat.ToString(CultureInfo.InvariantCulture),
+					Longitude = opencageResponse.results[0].geometry.lng.ToString(CultureInfo.InvariantCulture)
 				};
 
 				return coordenadas;
@@ -40,12 +40,14 @@ namespace WeatherConnect.API.Services
 
 		public async Task<InfClima> GetWeather(Cordenadas cordenadas)
 		{
+			string latitude = cordenadas.Latitude.Replace(',', '.');
+			string longitude = cordenadas.Longitude.Replace(',', '.');
 			using (HttpClient client = new HttpClient())
 			{
-				HttpResponseMessage response = await client.GetAsync($"https://api.openweathermap.org/data/2.5/weather?lat=-19.92083&lon=-43.93778&units=metric&lang=pt_br&appid=eb8fe453dcf001bc00344439e1ff4f67");
-				
+				HttpResponseMessage response = await client.GetAsync($"https://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&units=metric&lang=pt_br&appid=eb8fe453dcf001bc00344439e1ff4f67");
+
 				var openWeatherResponse = JsonSerializer.Deserialize<OpenWeather>(await response.Content.ReadAsStringAsync());
-				
+
 				var infClima = new InfClima
 				{
 					Temperatura = openWeatherResponse.main.temp,
@@ -53,7 +55,8 @@ namespace WeatherConnect.API.Services
 					Temperatura_minima = openWeatherResponse.main.temp_min,
 					Temperatura_maxima = openWeatherResponse.main.temp_max,
 					Pressao = openWeatherResponse.main.pressure,
-					Umidade = openWeatherResponse.main.humidity
+					Umidade = openWeatherResponse.main.humidity,
+					Descricao = openWeatherResponse.weather[0].description
 				};
 
 				return infClima;
