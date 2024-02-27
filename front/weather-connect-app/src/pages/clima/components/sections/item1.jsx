@@ -1,6 +1,7 @@
 ﻿import React, { useState } from "react";
 import apiWeather from "../../../../api/getWeather";
 import Modal from "react-modal";
+import { IoClose } from "react-icons/io5";
 
 function Item1() {
   const [inputValue, setInputValue] = useState("");
@@ -76,19 +77,19 @@ function Item1() {
           className="modal-content"
           overlayClassName="modal-overlay"
         >
-          <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+          <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">Modal Title</h3>
+                <div className="bg-white dark:bg-slate-800 flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+                  <h3 className="text-slate-900 dark:text-white text-3xl font-semibold">Modal Title</h3>
                   <button
                     onClick={closeModal}
-                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+                    className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
                   >
-                    X
+                    <IoClose />
                   </button>
                 </div>
-                <div className="w-auto p-6 flex-auto">
+                <div className="bg-white dark:bg-slate-800 w-auto p-6 flex-auto">
                   <p className="mb-2">
                     <span className="font-bold">Temperatura:</span>{" "}
                     {modalData.temperatura}
@@ -102,7 +103,7 @@ function Item1() {
                     {modalData.temperatura_minima}
                   </p>
                 </div>
-                <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+                <div className="flex items-center justify-end p-2 border-t border-solid border-blueGray-200 rounded-b">
                   <button
                     onClick={closeModal}
                     className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
@@ -113,7 +114,7 @@ function Item1() {
               </div>
             </div>
           </div>
-          <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+          <div className="opacity-25 fixed inset-0 z-40 bg-black" onClick={closeModal}></div>
         </Modal>
       </div>
     </div>
