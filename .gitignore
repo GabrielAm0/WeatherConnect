@@ -1,0 +1,8 @@
+﻿/front/weather-connect-app/node_modules/
+/front/weather-connect-app/build/
+.fake
+.idea/
+.vscode/
+/.dist/
+/back/src/WeatherConnect.API/.idea/
+.gitignore
