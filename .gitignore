@@ -5,3 +5,4 @@
 .vscode/
 /.dist/
 /back/src/WeatherConnect.API/.idea/
+.gitignore
