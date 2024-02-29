@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\gabriel.custodio.OITAVAIGREJA\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gabriel.custodio.OITAVAIGREJA\\.nuget\\packages"
+    ]
+  }
+}
