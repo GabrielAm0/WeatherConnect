@@ -6,3 +6,5 @@
 /.dist/
 /back/src/WeatherConnect.API/.idea/
 .gitignore
+/back/src/WeatherConnect.API/bin/
+/back/src/WeatherConnect.API/obj/
