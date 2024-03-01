@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "rDUM2apk52+nItlfASCwj6sxyhN/YzNJOarGDZtGauJzlixXl4LbFcbCNQexQr7N+NWs/w7uA1oI74BgMDHvpw==",
+  "dgSpecHash": "G1Rg+52K5IHOwa5E4nwKZr5qsJCDM8hn+pbbAdt594akVK7BIrXxKL1rHUDFxCRGNqw47MCANFUFS4QaJP+iBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gabriel.custodio.OITAVAIGREJA\\Documents\\GitHub\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
+  "projectFilePath": "C:\\Users\\Gabriel Amorim\\Desktop\\WeatherConnect\\back\\src\\WeatherConnect.API\\WeatherConnect.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gabriel.custodio.OITAVAIGREJA\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\gabriel.custodio.OITAVAIGREJA\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\gabriel.custodio.OITAVAIGREJA\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "C:\\Users\\gabriel.custodio.OITAVAIGREJA\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "C:\\Users\\gabriel.custodio.OITAVAIGREJA\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\gabriel.custodio.OITAVAIGREJA\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\Gabriel Amorim\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Gabriel Amorim\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Gabriel Amorim\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Gabriel Amorim\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Gabriel Amorim\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Gabriel Amorim\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
   ],
   "logs": []
 }
