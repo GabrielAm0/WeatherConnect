@@ -10,6 +10,9 @@ import Contact from "./components/sections/contact";
 
 function Components() {
 
+	document.body.classList.remove('no-scroll');
+	window.scrollTo(0, 0);
+
 	return (
 	 <>
 		 <div className="h-100 bg-white dark:bg-slate-900">

@@ -10,16 +10,22 @@ import { useLayoutEffect } from "react";
 function Card() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to("#Card0", {
-      x: -700,
-      opacity: 0,
-      scrollTrigger: {
-        trigger: "#sec-trig",
-        start: "590px",
-        end: "815px",
-        scrub: true,
-      },
-    });
+
+    // Verificar se a largura da tela é maior que 768 pixels (ou qualquer valor que você preferir)
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (!isMobile) {
+      gsap.to("#Card0", {
+        x: -700,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: "#sec-trig",
+          start: "590px",
+          end: "815px",
+          scrub: true,
+        },
+      });
+    }
 
     return () => {
       gsap.killTweensOf(".guarda-chuva");
@@ -28,17 +34,23 @@ function Card() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to("#Card1", {
-      x: -700,
-      opacity: 0,
-      scrollTrigger: {
-        // markers: true,
-        trigger: "#sec-trig",
-        start: "590px",
-        end: "815px",
-        scrub: true,
-      },
-    });
+
+    // Verificar se a largura da tela é maior que 768 pixels (ou qualquer valor que você preferir)
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (!isMobile) {
+      gsap.to("#Card1", {
+        x: -700,
+        opacity: 0,
+        scrollTrigger: {
+          // markers: true,
+          trigger: "#sec-trig",
+          start: "590px",
+          end: "815px",
+          scrub: true,
+        },
+      });
+    }
 
     return () => {
       gsap.killTweensOf(".guarda-chuva");
@@ -47,17 +59,24 @@ function Card() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to("#Card2", {
-      x: +700,
-      opacity: 0,
-      scrollTrigger: {
-        // markers: true,
-        trigger: "#sec-trig",
-        start: "590px",
-        end: "815px",
-        scrub: true,
-      },
-    });
+
+
+    // Verificar se a largura da tela é maior que 768 pixels (ou qualquer valor que você preferir)
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (!isMobile) {
+      gsap.to("#Card2", {
+        x: +700,
+        opacity: 0,
+        scrollTrigger: {
+          // markers: true,
+          trigger: "#sec-trig",
+          start: "590px",
+          end: "815px",
+          scrub: true,
+        },
+      });
+    }
 
     return () => {
       gsap.killTweensOf(".guarda-chuva");
@@ -66,17 +85,24 @@ function Card() {
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.to("#Card3", {
-      x: +700,
-      opacity: 0,
-      scrollTrigger: {
-        // markers: true,
-        trigger: "#sec-trig",
-        start: "590px",
-        end: "815px",
-        scrub: true,
-      },
-    });
+
+
+    // Verificar se a largura da tela é maior que 768 pixels (ou qualquer valor que você preferir)
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+    if (!isMobile) {
+      gsap.to("#Card3", {
+        x: +700,
+        opacity: 0,
+        scrollTrigger: {
+          // markers: true,
+          trigger: "#sec-trig",
+          start: "590px",
+          end: "815px",
+          scrub: true,
+        },
+      });
+    }
 
     return () => {
       gsap.killTweensOf(".guarda-chuva");
