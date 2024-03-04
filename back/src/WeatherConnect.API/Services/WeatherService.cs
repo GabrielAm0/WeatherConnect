@@ -20,6 +20,7 @@ namespace WeatherConnect.API.Services
 			}
 		}
 
+
 		public async Task<Cordenadas> GetCordenadas(CEP endereco)
 		{
 			using (HttpClient client = new HttpClient())

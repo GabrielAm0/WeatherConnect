@@ -2,7 +2,7 @@
 import apiWeather from "../../../../api/getWeather";
 import Modal from "react-modal";
 import { WiDaySunny } from "react-icons/wi";
-
+import InputMask from 'react-input-mask';
 
 function Item1() {
   const [inputValue, setInputValue] = useState("");
@@ -57,12 +57,14 @@ function Item1() {
 
          <div className="mt-8 flex items-center justify-center">
            <form className="flex items-center justify-center w-9/12 input-container">
-             <input
-              className="bg-gray-200 ring-gray-50 focus:ring-gray-500 focus:bg-gray-300 dark:bg-gray-700 px-6 py-4 w-9/12 rounded-md focus:ring-2 focus:outline-none dark:focus:outline-offset-2 dark:focus:ring-slate-500 dark:focus:bg-slate-600 dark:text-white"
-              onKeyDown={handleKeyDown}
-              onChange={handleChange}
-              value={inputValue}
-             />
+             <InputMask
+                mask="99999-999"  
+                maskPlaceholder={null}
+                className="bg-gray-200 ring-gray-50 focus:ring-gray-500 focus:bg-gray-300 dark:bg-gray-700 px-6 py-4 w-9/12 rounded-md focus:ring-2 focus:outline-none dark:focus:outline-offset-2 dark:focus:ring-slate-500 dark:focus:bg-slate-600 dark:text-white"
+                onKeyDown={handleKeyDown}
+                onChange={handleChange}
+                value={inputValue}
+              />
            </form>
          </div>
 
