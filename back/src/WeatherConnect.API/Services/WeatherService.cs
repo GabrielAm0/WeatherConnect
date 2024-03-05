@@ -21,10 +21,12 @@ namespace WeatherConnect.API.Services
 
 				if (json1.erro == "true")
 				{
-					throw new Exception($@"Erro no serviço externo, o cep {cep} não foi encontrado");
+					throw new Exception();
 				}
-				
-				return json1;
+				else
+				{
+					return json1;
+				}
 			}
 		}
 
