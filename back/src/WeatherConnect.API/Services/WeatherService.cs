@@ -1,8 +1,10 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
-using WeatherConnect.API.Entities;
+using Microsoft.AspNetCore.Mvc;
+using WeatherConnect.API.Entities; 
 using WeatherConnect.API.Interfaces.Services;
 
 namespace WeatherConnect.API.Services
@@ -14,8 +16,14 @@ namespace WeatherConnect.API.Services
 			using (HttpClient client = new HttpClient())
 			{
 				var response = await client.GetAsync($"https://viacep.com.br/ws/{cep}/json/");
-				CEP json1 = JsonSerializer.Deserialize<CEP>(await response.Content.ReadAsStringAsync());
+				string jsonResponse = await response.Content.ReadAsStringAsync();
+				CEP json1 = JsonSerializer.Deserialize<CEP>(jsonResponse);
 
+				if (json1.erro == "true")
+				{
+					throw new Exception($@"Erro no serviço externo, o cep {cep} não foi encontrado");
+				}
+				
 				return json1;
 			}
 		}

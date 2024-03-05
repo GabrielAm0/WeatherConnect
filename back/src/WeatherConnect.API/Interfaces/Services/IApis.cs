@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using WeatherConnect.API.Entities;
 
 namespace WeatherConnect.API.Interfaces.Services
