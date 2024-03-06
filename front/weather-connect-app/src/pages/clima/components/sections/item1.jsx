@@ -53,16 +53,15 @@ function Item1() {
 			return (
 				<>
 					<div className="border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-						<div
-							className="flex bg-white dark:bg-slate-800 p-3 border-b border-solid border-gray-300 dark:border-slate-500 rounded-t-lg justify-center">
+						<div className="flex bg-white dark:bg-slate-800 p-3 border-b border-solid border-gray-300 dark:border-slate-500 rounded-t-lg justify-center">
 							<h3 className=" text-red-500 dark:text-red-400 text-2xl font-semibold ">
 								ERRO
 							</h3>
 						</div>
 					</div>
 					<div className="bg-white dark:bg-slate-800 p-6 flex flex-col justify-center items-center rounded-b-md">
-						<p className="text-lg font-bold  text-red-500 dark:text-red-400">
-							Ocorreu um erro ao tentar buscar pelo seguinte CEP digitado
+						<p className="text-lg font-bold  text-red-500 dark:text-red-400 text-center cel:text-sm">
+							Ocorreu um erro ao tentar buscar pelo CEP digitado
 						</p>
 						<div className="pt-3">
 							<button

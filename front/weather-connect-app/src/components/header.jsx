@@ -1,10 +1,9 @@
 ﻿import {NavLink, useLocation} from 'react-router-dom';
 import Foto from '../assets/img/logo.png';
 import {useState} from "react";
-import {MdDarkMode} from "react-icons/md";
+import {MdDarkMode, MdMenu} from "react-icons/md";
 import { BsSunFill } from "react-icons/bs";
 import {useTheme} from "../hooks/useTheme";
-
 
 function Header() {
 	const location = useLocation();
@@ -12,7 +11,6 @@ function Header() {
 	const isNavLinkActive = (path) => {
 		return location.pathname === path;
 	};
-
 
 	const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -31,7 +29,7 @@ function Header() {
 						 <div className="flex flex-row items-center">
 							 <ul className="font-semibold  lg:flex-row lg:space-x-8 lg:mt-0 flex">
 								 <li>
-									 <NavLink to="/home" className={'flex flex-row items-center justify-center'}>
+									 <NavLink to="/home" className={'flex flex-row items-center justify-center cel:ml-5'}>
 										 <img src={Foto} alt="Weather Connect Logo" className="w-10 h-10 mr-2"/>
 										 <div className="text-gradient">
 											 <span className="text-2xl font-bold text-slate-700 tracking-tighter">Weather Connect</span>
@@ -41,12 +39,15 @@ function Header() {
 							 </ul>
 						 </div>
 						 <div className="flex flex-row items-center">
-							 <ul className="font-semibold flex lg:flex-row lg:space-x-8 lg:mt-0">
+							 <button onClick={toggleMenu} className="lg:hidden" >
+								 <MdMenu size={30} className="text-slate800 dark:text-slate-200 hover:text-slate-500 mr-5"/>
+							 </button>
+							 <ul className={`font-semibold flex ${isMenuOpen ? 'flex' : 'hidden'} lg:flex lg:space-x-8 lg:mt-0`}>
 								 <li>
 									 <NavLink
 									  to="/home"
 									  activeclassname="text-slate-500"
-									  className={`text-slate-800 hover:text-slate-500 ${isNavLinkActive('/home') ? 'text-gradient font-extrabold' : ''}dark:text-slate-200`}
+									  className={`text-slate-800 hover:text-slate-500 cel:mr-2 ${isNavLinkActive('/home') ? 'text-gradient font-extrabold' : ''}dark:text-slate-200`}
 									 >
 										 Home
 									 </NavLink>
@@ -55,43 +56,17 @@ function Header() {
 									 <NavLink
 									  to="/clima"
 									  activeclassname="text-slate-500"
-									  className={`text-slate-800 hover:text-slate-500 ${isNavLinkActive('/clima') ? 'text-gradient font-extrabold' : ''}dark:text-slate-200`}
+									  className={`text-slate-800 hover:text-slate-500 cel:mr-2 ${isNavLinkActive('/clima') ? 'text-gradient font-extrabold' : ''}dark:text-slate-200`}
 									 >
 										 Clima
 									 </NavLink>
 								 </li>
-								 {/*<li>
-									 <NavLink
-									  to="/astronomia"
-									  activeclassname="text-slate-500"
-									  className={`text-slate800 hover:text-slate-500 ${isNavLinkActive('/astronomia') ? 'text-gradient font-extrabold' : ''}`}
-									 >
-										 Astronomia
-									 </NavLink>
-								 </li>
-								 <li>
-									 <NavLink
-									  to="/sol"
-									  activeclassname="text-slate-500"
-									  className={`text-slate800 hover:text-slate-500 ${isNavLinkActive('/sol') ? 'text-gradient font-extrabold' : ''}`}
-									 >
-										 Sol
-									 </NavLink>
-								 </li>
-								 <li>
-									 <NavLink
-									  to="/mares"
-									  activeclassname="text-slate-500"
-									  className={`text-slate800 hover:text-slate-500 ${isNavLinkActive('/mares') ? 'text-gradient font-extrabold' : ''}`}
-									 >
-										 Marés
-									 </NavLink>
-								 </li>*/}
+
 								 <li className="flex items-center">
 									 <a
 									  href="https://github.com/GabrielAm0/WeatherConnect"
 									  target="_blank"
-									  className="ml-1 block text-slate800 hover:text-slate-500 dark:text-slate-200"
+									  className="ml-1 block text-slate800 cel:mr-2 hover:text-slate-500 dark:text-slate-200" rel="noreferrer"
 									 >
 										 <svg viewBox="0 0 16 16" className="w-5 h-5" fill="currentColor"
 										      aria-hidden="true">
@@ -104,8 +79,8 @@ function Header() {
 
 								 <li className="flex items-center">
 									 {theme === 'light' ?
-									  <MdDarkMode size={22} className="cursor-pointer text-slate800 dark:text-slate-200 hover:text-slate-500" onClick={() => setTheme("dark")}></MdDarkMode> : 
-									  (<BsSunFill size={22} className="cursor-pointer text-slate800 dark:text-slate-200 hover:text-slate-500" onClick={() => setTheme("light")}></BsSunFill>)
+									  <MdDarkMode size={22} className="cel:mr-2 cursor-pointer text-slate800 dark:text-slate-200 hover:text-slate-500" onClick={() => setTheme("dark")}></MdDarkMode> : 
+									  (<BsSunFill size={22} className="cel:mr-2 cursor-pointer text-slate800 dark:text-slate-200 hover:text-slate-500" onClick={() => setTheme("light")}></BsSunFill>)
 									 }
 								 </li>
 							 </ul>

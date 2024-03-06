@@ -120,14 +120,6 @@ C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\
 C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.pdb
 C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.genruntimeconfig.cache
 C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\ref\WeatherConnect.API.dll
-C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.sourcelink.json
-C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\WeatherConnect.API.StaticWebAssets.Pack.cache
-C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\msbuild.WeatherConnect.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\msbuild.build.WeatherConnect.API.props
-C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.WeatherConnect.API.props
-C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.WeatherConnect.API.props
-C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherC.8829D83D.Up2Date
-C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\refint\WeatherConnect.API.dll
 C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\WeatherConnect.API.StaticWebAssets.xml
 C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.sourcelink.json
 C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\WeatherConnect.API.StaticWebAssets.Pack.cache
@@ -136,3 +128,6 @@ C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\D
 C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.WeatherConnect.API.props
 C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.WeatherConnect.API.props
 C:\Users\Gabriel Amorim\Desktop\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\refint\WeatherConnect.API.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\bin\Debug\net5.0\ref\WeatherConnect.API.dll
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\staticwebassets\WeatherConnect.API.StaticWebAssets.xml
+C:\Users\gabriel.custodio.OITAVAIGREJA\Documents\GitHub\WeatherConnect\back\src\WeatherConnect.API\obj\Debug\net5.0\WeatherConnect.API.csproj.CopyComplete
