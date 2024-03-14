@@ -13,7 +13,7 @@ function Contact() {
 			y: 0,
 			opacity: 1,
 			scrollTrigger: {
-				markers: true,
+				// markers: true,
 				trigger: '#div-sec-oculos',
 				start: '-460px',
 				end: '20px',
